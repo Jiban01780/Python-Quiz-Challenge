@@ -114,3 +114,7 @@ Potential features that could be added:
 This project is open source and available under the MIT License.
 
 ---
+
+**Happy Learning! 🐍✨**
+
+Start your Python knowledge assessment now by opening `index.html` in your browser!

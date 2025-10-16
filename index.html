@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz Master - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Welcome Header -->
+        <header class="welcome-header">
+            <div class="logo">
+                <i class="fab fa-python"></i>
+                <h1>Python Quiz Master</h1>
+            </div>
+            <p class="subtitle">Test your Python programming knowledge</p>
+        </header>
+
+        <!-- Welcome Screen -->
+        <div class="welcome-screen">
+            <div class="welcome-content">
+                <div class="welcome-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2>Welcome to Python Quiz!</h2>
+                <p>Challenge yourself with questions ranging from basic to moderate Python programming concepts.</p>
+                
+                <div class="quiz-info">
+                    <div class="info-card">
+                        <i class="fas fa-question-circle"></i>
+                        <span>20 Questions</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <span>20 Minutes</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-trophy"></i>
+                        <span>Instant Results</span>
+                    </div>
+                </div>
+
+                <button id="start-quiz" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Get Started - Sign In
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if user is already logged in
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentUser = localStorage.getItem('currentUser');
+            if (currentUser) {
+                // User is already logged in, redirect to quiz
+                window.location.href = 'quiz.html';
+            }
+            
+            // Add click event to start button
+            document.getElementById('start-quiz').addEventListener('click', () => {
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html>
