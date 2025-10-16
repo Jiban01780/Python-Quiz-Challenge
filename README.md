@@ -54,5 +54,3 @@ A modern, interactive quiz application designed to test your Python programming 
 - Click "Review Answers" to see all questions  
 - View correct answers and explanations  
 - Learn from your mistakes
-
-## File Structure
